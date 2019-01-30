@@ -1,4 +1,4 @@
-package pricewatcher.console;
+ package pricewatcher.console;
 import java.util.Scanner;
 //import pricewatcher.console.Main.SelectionHandler;
 
@@ -15,10 +15,17 @@ public class UI {
 
 			Scanner input = new Scanner(System.in);  // Reading from System.in
 			
-			int in = input.nextInt(); // Scans the next token of the input as an int.
+			int  sel = input.nextInt(); // Scans the next token of the input as an int.
 			//once finished
 			input.close();
-			return Selection(in);
+			System.out.println(sel);
+			for(Selection s: Selection.values()) {
+				if(sel ==s.number) {
+					System.out.println(s.name());
+					return s;
+				}
+			}
+			
 		}
 		
 	}
@@ -26,17 +33,16 @@ public class UI {
 		PRICE(1, new PriceHandler()),
 		VIEW(2, new ViewHandler()),
 		QUIT(-1, null);
-		
 		public final int number;
 		public final SelectionHandler handler;
-		
+	
 		Selection(int number, SelectionHandler handler){
 			this.number = number;
 			this.handler = handler;
 		}
 	}
 	static class SelectionHandler {public void handle() {}}
-	static class PriceHandler extends SelectionHandler{public void handle() {}}
+	static class PriceHandler extends SelectionHandler{ ;public void handle() {System.out.println("PriceHandler");}}
 	static class ViewHandler extends SelectionHandler{public void handle() {}}
 	
 }
