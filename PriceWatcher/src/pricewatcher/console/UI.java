@@ -1,3 +1,7 @@
+/*
+ * Robert Corral: Rocorral@miners.utep.edu
+ * 80416750
+ */
 package pricewatcher.console;
 import java.io.IOException;
 import java.net.URI;
@@ -5,7 +9,10 @@ import java.net.URISyntaxException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.text.DecimalFormat;
-
+/*
+ * The UI class will handle all events printed on the console
+ * and operations selected from the menu
+ */
 public class UI {
 	public static DecimalFormat df2 = new DecimalFormat(".##");
 	public static final int QUIT = -1;
@@ -14,7 +21,7 @@ public class UI {
 	public void showWelcome() {
 		System.out.println("Welcome to Price Watcher!\n");
 	}
-	public void showItem(Item curItem){
+	public void showItem(Item curItem){//Item info display
 		System.out.println(""
 		+ "Name:    "+Item.name+"\n"
 		+ "URL:     "+Item.url+"\n"
@@ -22,7 +29,7 @@ public class UI {
 		+ "Change:  "+df2.format(Item.change)+ "%\n"
 		+ "Added:   "+Item.added+" ("+Item.initPrice+")\n"); 
 	}
-	public static Selection readSelection() {
+	public static Selection readSelection() {//User menu Prompt
 		try {
 			System.out.printf("\n Enter %d (to check price), %d(to view page), or %d to quit?\n", PRICE,VIEW,QUIT);
 			System.out.flush();
@@ -30,21 +37,22 @@ public class UI {
 			int sel = input.nextInt(); 
 			for(Selection s: Selection.values()) {
 				if(sel == s.number) {
-					System.out.println(" \n you selected option: "+sel+"\n");
+					System.out.println(" \n you selected: "+s+"\n");
 					return s;
 				}
 			}
 		}
+		//Error catching for invalid input
 		catch(InputMismatchException e2){
 			System.out.println("Invalid entry!!!\n"
 					+ "Try a number from the menu\n");
 			return null;
 		}
-		System.out.println("Invalid Number!!!\n"
+		System.out.println("Invalid Number!!!\n" 
 				+ "Please refer to options menu\n");
 		return null;	
 	}
-	public enum Selection{
+	public enum Selection{ 
 		PRICE(1, new PriceHandler()),
 		VIEW(2, new ViewHandler()),
 		QUIT(-1, new QuitHandler());
@@ -56,6 +64,7 @@ public class UI {
 			this.handler = handler;
 		}
 	}
+	//Handle Selections based on user selection
 	static class SelectionHandler {
 		public void handle(Item curItem) {
 		}

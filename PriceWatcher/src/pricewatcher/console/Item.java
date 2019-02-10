@@ -1,3 +1,7 @@
+/*
+ * Robert Corral: Rocorral@miners.utep.edu
+ * 80416750
+ */
 package pricewatcher.console;
 
 public class Item {
