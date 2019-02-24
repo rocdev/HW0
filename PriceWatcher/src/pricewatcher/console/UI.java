@@ -75,7 +75,7 @@ public class UI {
 			Item.lastPrice = Item.price;
 			Item.price += PriceFinder.simulatePriceChange();
 			Item.change = PriceFinder.calcChange(curItem);	
-		}
+		} 
 	}
 	static class ViewHandler extends SelectionHandler{
 		public void handle(Item curItem) {

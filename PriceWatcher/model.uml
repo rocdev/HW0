@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vNCeUC1rEemAhpncIMMicw" name="model">
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6k4-4DZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lA6sDZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lA6sTZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lA6sjZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lA6szZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lA6tDZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lBhwDZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_6lBhwTZUEem4w8i6wdla_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_vdFFcC1rEemAhpncIMMicw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_vU4LsC1rEemAhpncIMMicw" name="z">
+    <region xmi:type="uml:Region" xmi:id="_vVOJ8C1rEemAhpncIMMicw" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_fIeWoDfAEem0sahBiiaP0w" name="Add Item" source="_BXUbADfAEem0sahBiiaP0w" target="_KM7v0DfLEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7ctoUDfAEem0sahBiiaP0w" source="_iIluIDe_Eem0sahBiiaP0w" target="_BXUbADfAEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MD75QDfBEem0sahBiiaP0w" name="Quit" source="_j-ITcDe_Eem0sahBiiaP0w" target="_1NficDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QrGfYDfGEem0sahBiiaP0w" source="_SAqWYDfBEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_lo2SYDfLEem0sahBiiaP0w" name="Valid URL" source="_KM7v0DfLEem0sahBiiaP0w" target="_h7nysDfLEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_27JgoDfLEem0sahBiiaP0w" name="Confirmation" source="_h7nysDfLEem0sahBiiaP0w" target="_s3qpgDfLEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_57iIcDfLEem0sahBiiaP0w" name="Done Adding" source="_s3qpgDfLEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="__Ex6MDfLEem0sahBiiaP0w" name="Add Another" source="_s3qpgDfLEem0sahBiiaP0w" target="_KM7v0DfLEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GzJUEDfMEem0sahBiiaP0w" name="Add Item" source="_j-ITcDe_Eem0sahBiiaP0w" target="_KM7v0DfLEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KoVc8DfMEem0sahBiiaP0w" name="Cancel Addition" source="_KM7v0DfLEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_LjAgADfNEem0sahBiiaP0w" name="Confirm" source="_CudhMDfNEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_NYUb0DfNEem0sahBiiaP0w" name="View Item" source="_j-ITcDe_Eem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YofvkDfNEem0sahBiiaP0w" name="Delete Item" source="_7LQOcDfMEem0sahBiiaP0w" target="_CudhMDfNEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_oA4O0DfNEem0sahBiiaP0w" name="Cancel" source="_CudhMDfNEem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HvOacDfPEem0sahBiiaP0w" name="Invalid URL/ No Internet Connection" source="_KM7v0DfLEem0sahBiiaP0w" target="_KM7v0DfLEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_elBGcDfPEem0sahBiiaP0w" name="Time Interval/Update All" source="_j-ITcDe_Eem0sahBiiaP0w" target="_4_9wsDfOEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_mP2EIDfPEem0sahBiiaP0w" name="No Internet" source="_4_9wsDfOEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FWmgwDfQEem0sahBiiaP0w" name="Connection" source="_4_9wsDfOEem0sahBiiaP0w" target="_6b9YIDfPEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_m13s4DfQEem0sahBiiaP0w" name="No Change detected" source="_6b9YIDfPEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_p_fwQDfQEem0sahBiiaP0w" name="Change Detected" source="_6b9YIDfPEem0sahBiiaP0w" target="_WSk5sDfQEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_i9QAEDfREem0sahBiiaP0w" name="NonSignificant Change" source="_WSk5sDfQEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OBYNoDfSEem0sahBiiaP0w" name="Significant Change" source="_WSk5sDfQEem0sahBiiaP0w" target="_GHNMYDfSEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_d2-NUDfSEem0sahBiiaP0w" name="Resume" source="_GHNMYDfSEem0sahBiiaP0w" target="_j-ITcDe_Eem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Z2XCIDfTEem0sahBiiaP0w" name="Open External Browser Window" source="_7LQOcDfMEem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tyGiYDfUEem0sahBiiaP0w" name="Update Info" source="_7LQOcDfMEem0sahBiiaP0w" target="_FWcL4zfUEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_2HrtQDfUEem0sahBiiaP0w" name="No Internet" source="_FWcL4zfUEem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5eU48DfUEem0sahBiiaP0w" name="Connection" source="_FWcL4zfUEem0sahBiiaP0w" target="_FWcL4jfUEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_B1EhcDfVEem0sahBiiaP0w" name="No Change" source="_FWcL4jfUEem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_D-iIUDfVEem0sahBiiaP0w" name="Change" source="_FWcL4jfUEem0sahBiiaP0w" target="_FWcL4TfUEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GCaEkDfVEem0sahBiiaP0w" name="Sig Change" source="_FWcL4TfUEem0sahBiiaP0w" target="_FWcL4DfUEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_LXJ7sDfVEem0sahBiiaP0w" name="Non Sig Change" source="_FWcL4TfUEem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_VwHTkDfVEem0sahBiiaP0w" name="Display Changes" source="_FWcL4DfUEem0sahBiiaP0w" target="_7LQOcDfMEem0sahBiiaP0w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_mwaEcDfYEem0sahBiiaP0w" name="No Items in List" source="_4_9wsDfOEem0sahBiiaP0w" target="_BXUbADfAEem0sahBiiaP0w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_iIluIDe_Eem0sahBiiaP0w" name="New Use"/>
+      <subvertex xmi:type="uml:State" xmi:id="_j-ITcDe_Eem0sahBiiaP0w" name="Watching Prices Home"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_1NficDe_Eem0sahBiiaP0w" name="Exit"/>
+      <subvertex xmi:type="uml:State" xmi:id="_BXUbADfAEem0sahBiiaP0w" name="Empty List"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_SAqWYDfBEem0sahBiiaP0w" name="Continuing Use"/>
+      <subvertex xmi:type="uml:State" xmi:id="_KM7v0DfLEem0sahBiiaP0w" name="Adding item">
+        <doActivity xmi:type="uml:Activity" xmi:id="_S8vmgDf1Eem0sahBiiaP0w" name="Enter URL"/>
+        <entry xmi:type="uml:Activity" xmi:id="_kILCoDfzEem0sahBiiaP0w" name="Push Add Item Button" visibility="public" node="_iB3ykDf1Eem0sahBiiaP0w">
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_iB3ykDf1Eem0sahBiiaP0w" name="CallBehaviorAction1" behavior="_S8vmgDf1Eem0sahBiiaP0w"/>
+        </entry>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_h7nysDfLEem0sahBiiaP0w" name="Scraping Info"/>
+      <subvertex xmi:type="uml:State" xmi:id="_s3qpgDfLEem0sahBiiaP0w" name="Add to List"/>
+      <subvertex xmi:type="uml:State" xmi:id="_7LQOcDfMEem0sahBiiaP0w" name="Item Info Display"/>
+      <subvertex xmi:type="uml:State" xmi:id="_CudhMDfNEem0sahBiiaP0w" name="Confirmation"/>
+      <subvertex xmi:type="uml:State" xmi:id="_4_9wsDfOEem0sahBiiaP0w" name="Fetch Updated Prices"/>
+      <subvertex xmi:type="uml:State" xmi:id="_6b9YIDfPEem0sahBiiaP0w" name="Scrape New Info"/>
+      <subvertex xmi:type="uml:State" xmi:id="_WSk5sDfQEem0sahBiiaP0w" name="Calc Change Update Vals"/>
+      <subvertex xmi:type="uml:State" xmi:id="_GHNMYDfSEem0sahBiiaP0w" name="Notify User"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FWcL4DfUEem0sahBiiaP0w" name="Notify User"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FWcL4TfUEem0sahBiiaP0w" name="Calc Change Update Vals"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FWcL4jfUEem0sahBiiaP0w" name="Scrape New Info"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FWcL4zfUEem0sahBiiaP0w" name="Fetch Updated Prices"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Q1KEcC1sEemAhpncIMMicw" name="Price Watcher">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZHKW4C1sEemAhpncIMMicw" name="ViewPrice">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uMN2UC1yEemAhpncIMMicw" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_I1-iMC1-EemAhpncIMMicw" addition="_Y4630C1yEemAhpncIMMicw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cR50kC1sEemAhpncIMMicw" name="Edit Items List">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_2KZM0S19EemAhpncIMMicw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_3Wl6MC19EemAhpncIMMicw" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_5WeHQC19EemAhpncIMMicw" name="ExtensionPoint3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oQHTAC1sEemAhpncIMMicw" name="Open URL"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Y4630C1yEemAhpncIMMicw" name="UpdatePrice">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_bHVn0S3NEemAhpncIMMicw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_imrAcC17EemAhpncIMMicw" name="Add">
+      <extend xmi:type="uml:Extend" xmi:id="_2KZM0C19EemAhpncIMMicw" extendedCase="_cR50kC1sEemAhpncIMMicw" extensionLocation="_2KZM0S19EemAhpncIMMicw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kIoicC17EemAhpncIMMicw" name="Remove">
+      <extend xmi:type="uml:Extend" xmi:id="_3WlTIC19EemAhpncIMMicw" extendedCase="_cR50kC1sEemAhpncIMMicw" extensionLocation="_3Wl6MC19EemAhpncIMMicw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_rJrfgC3MEemAhpncIMMicw" name="PriceChangeAllert">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ippisC3NEemAhpncIMMicw" general="_pxci4C1sEemAhpncIMMicw"/>
+      <extend xmi:type="uml:Extend" xmi:id="_bHVn0C3NEemAhpncIMMicw" extendedCase="_Y4630C1yEemAhpncIMMicw" extensionLocation="_bHVn0S3NEemAhpncIMMicw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pxci4C1sEemAhpncIMMicw" name="User"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NceCoC1yEemAhpncIMMicw" name="Time">
+    <generalization xmi:type="uml:Generalization" xmi:id="_oYPFgC1yEemAhpncIMMicw" general="_Y4630C1yEemAhpncIMMicw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DD2dcC18EemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FEccMC18EemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_XcpaMC2KEemAhpncIMMicw" name="Price Watcher">
+    <packagedElement xmi:type="uml:Class" xmi:id="_eD4z8C2KEemAhpncIMMicw" name="Item">
+      <generalization xmi:type="uml:Generalization" xmi:id="__JFTwDe9Eem0sahBiiaP0w" general="_xyygIC2NEemAhpncIMMicw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dmTOIC2MEemAhpncIMMicw" name="url" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4YA9IC2MEemAhpncIMMicw" name="price" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KXUbUC2NEemAhpncIMMicw" name="change" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_P4fk4C2NEemAhpncIMMicw" name="added" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T_t48C2NEemAhpncIMMicw" name="lastPrice" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XkzwUC2NEemAhpncIMMicw" name="initPrice" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gMTKkC2NEemAhpncIMMicw" name="name" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_p4CckDgAEem0sahBiiaP0w" name="Item"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xyygIC2NEemAhpncIMMicw" name="UI">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yEBmgDZTEem4w8i6wdla_Q" name="df2">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_BqOxUDf_Eem0sahBiiaP0w" name="DecimalFormat" value=".##&#xD;&#xA;"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xY4s4DZVEem4w8i6wdla_Q" name="Selection">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEnumerator"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IJ1SADf_Eem0sahBiiaP0w" name="QUIT">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_d_TJcDf_Eem0sahBiiaP0w" name="QUIT" value="-1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gBZkEDf_Eem0sahBiiaP0w" name="PRICE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_lDLb4Df_Eem0sahBiiaP0w" name="Price" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mjXcQDf_Eem0sahBiiaP0w" name="VIEW">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_qgHlsDf_Eem0sahBiiaP0w" name="VIEW" value="2"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_zBFp0C2OEemAhpncIMMicw" name="showWelcome()"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_7fHmEC2OEemAhpncIMMicw" name="showItem()"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_HVpIIC2PEemAhpncIMMicw" name="readSelection()"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jDH70C2PEemAhpncIMMicw" name="PriceFinder">
+      <generalization xmi:type="uml:Generalization" xmi:id="_-eRcMDe9Eem0sahBiiaP0w" general="_eD4z8C2KEemAhpncIMMicw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_LbGFIC2QEemAhpncIMMicw" name="calcChange" isStatic="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_VuUocC2QEemAhpncIMMicw" name="calculation" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dq83sC2SEemAhpncIMMicw" name="curItem" type="_eD4z8C2KEemAhpncIMMicw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2xk6cDe2Eem0sahBiiaP0w" name="SelectionHandler">
+      <generalization xmi:type="uml:Generalization" xmi:id="_9YTSoDe9Eem0sahBiiaP0w" general="_xyygIC2NEemAhpncIMMicw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_U9-oADgBEem0sahBiiaP0w" name="handle" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_U9-oATgBEem0sahBiiaP0w" name="curItem" type="_p4CckDgAEem0sahBiiaP0w"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3WJnIDe2Eem0sahBiiaP0w" name="QuitHandler">
+      <generalization xmi:type="uml:Generalization" xmi:id="_8ADGQDe9Eem0sahBiiaP0w" general="_2xk6cDe2Eem0sahBiiaP0w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_14930DgAEem0sahBiiaP0w" name="handle" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_14930TgAEem0sahBiiaP0w" name="curItem" type="_p4CckDgAEem0sahBiiaP0w"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5nHkMDe2Eem0sahBiiaP0w" name="PriceHandler">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6bb44De9Eem0sahBiiaP0w" general="_2xk6cDe2Eem0sahBiiaP0w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1EnCsDgAEem0sahBiiaP0w" name="handle" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_1EnCsTgAEem0sahBiiaP0w" name="curItem" type="_p4CckDgAEem0sahBiiaP0w"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_602ioDe2Eem0sahBiiaP0w" name="ViewHandler">
+      <generalization xmi:type="uml:Generalization" xmi:id="_8wKUkDe9Eem0sahBiiaP0w" general="_2xk6cDe2Eem0sahBiiaP0w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_W3_TEDgAEem0sahBiiaP0w" name="handle" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_shfLEDgAEem0sahBiiaP0w" name="curItem" type="_p4CckDgAEem0sahBiiaP0w"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_M6AKgDgBEem0sahBiiaP0w" name="Notification"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hDlH4DgBEem0sahBiiaP0w" name="Remove Handler"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rtnosDgBEem0sahBiiaP0w" name="Scrape Page"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NhekwDgCEem0sahBiiaP0w" name="Additem Handler"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oKUMMC2cEemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sKnY4C2cEemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bc-ykC3LEemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cRuCMC3LEemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dxRJYC3LEemAhpncIMMicw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fkRYEC3LEemAhpncIMMicw" name="Package16">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_QcG10C1tEemAhpncIMMicw" name="Web Server &lt;&lt;System>>"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_NKSkIC2LEemAhpncIMMicw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NKTyQC2LEemAhpncIMMicw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
